@@ -10,41 +10,44 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <div>
-                <form>
-                    <input type="text" name="display"> 
-                </form>
-            </div>   
-            <div>
-                <input type="button" value="AC" oneclick="display.value">
-                <input type="button" value="DEL" oneclick="display.value" ="display.value.toString">
-                <input type="button" value="." oneclick="display.value" +=".">
-                <input type="button" value="/" oneclick="display.value" +="/">
-            </div> 
-            <div>
-                <input type="button" value="7" oneclick="display.value" +="">
-                <input type="button" value="8" oneclick="display.value"+="">
-                <input type="button" value="9" oneclick="display.value"+="">
-                <input type="button" value="*"oneclick="display.value"+="">
-            </div>
-            <div>
-                <input type="button" value="4" oneclick="display.value"+=>
-                <input type="button" value="5"oneclick="display.value">
-                <input type="button" value="6" oneclick="display.value">>
-                <input type="button" value="-" oneclick="display.value">>
-            </div>
-            <div>
-                <input type="button" value="1" oneclick="display.value">>
-                <input type="button" value="2" oneclick="display.value">>
-                <input type="button" value="3" oneclick="display.value">>
-                <input type="button" value="+" oneclick="display.value">>
-            </div>
-            <div>
-                <input type="button" value="00" oneclick="display.value">>
-                <input type="button" value="0" oneclick="display.value">>
-                <input type="button" value="=" oneclick="display.value">>
-            </div>
+            <form>
+                <div class="display">
+                        <input type="text" name="display"> 
+                </div>   
+                <div>
+                    <input type="button" value="AC" oneclick="display.value = '' ">
+                    <input type="button" value="DEL" oneclick="display.value = display.value.toString().slice (0,-1)">
+                    <input type="button" value="." oneclick="display.value +='.' ">
+                    <input type="button" value="/" oneclick="display.value +='/'">
+                </div> 
+                <div>
+                    <input type="button" value="7" oneclick="display.value +='7' ">
+                    <input type="button" value="8" oneclick="display.value +='8' ">
+                    <input type="button" value="9" oneclick="display.value +='9' ">
+                    <input type="button" value="*" oneclick="display.value +='*' ">
+                </div>
+                <div>
+                    <input type="button" value="4" oneclick="display.value +='4'">
+                    <input type="button" value="5" oneclick="display.value +='5' ">
+                    <input type="button" value="6" oneclick="display.value +='6' ">
+                    <input type="button" value="-" oneclick="display.value +='-' ">
+                </div>
+                <div>
+                    <input type="button" value="1" oneclick="display.value +='1' ">
+                    <input type="button" value="2" oneclick="display.value +='2' ">
+                    <input type="button" value="3" oneclick="display.value +='3' ">
+                    <input type="button" value="+" oneclick="display.value +='+' ">
+                </div>
+                <div>
+                    <input type="button" value="00" oneclick="display.value" +="00">
+                    <input type="button" value="0" oneclick="display.value" +="0">
+                    <input type="button" value="=" oneclick="display.value">
+                </div>
+            </form>    
         </div>
-    </div>
+    </div>   
 </body>
 </html>
+//researh on this //
+
+//Hoisting in javascript//

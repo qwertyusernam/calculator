@@ -9,7 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50px;
+    min-width: 25px;
     background: url(Astronout.jpg) no-repeat;
     background-size: cover;  
     background-position: center;
@@ -21,7 +22,7 @@ body{
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    width: 300px;
+    width: 400px;
 }
 
 .calculator{
@@ -33,7 +34,14 @@ body{
 .calculator form input {
     border: 0;
     outline: 0;
-    width: 60px;
+    width: 80px;
     height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(red, green, blue, alpha);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
 
 }
